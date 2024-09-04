@@ -1,0 +1,70 @@
+/* InquiryPopup.css */
+.F_inquiry-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 화면 어둡게 처리 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.F_inquiry-popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 팝업에 그림자 효과 */
+  max-width: 90%;
+  width: 500px; /* 팝업의 너비 설정 */
+  z-index: 1001;
+}
+
+.F_inquiry-popup-content h3 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.F_inquiry-popup-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.F_inquiry-popup-content .F_form-group {
+  margin-bottom: 15px;
+}
+
+.F_inquiry-popup-content .F_form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.F_inquiry-popup-content .F_form-group input,
+.F_inquiry-popup-content .F_form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.F_inquiry-popup-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.F_inquiry-popup-actions button {
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.F_inquiry-popup-actions button[type="button"] {
+  background-color: #F2620F; /* 닫기 버튼 색상 */
+}

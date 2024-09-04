@@ -1,0 +1,111 @@
+.F_profile-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.F_profile {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.F_profile-img {
+  border-radius: 50%;
+  width: 150px; /* 150px 고정 크기 설정 */
+  height: 150px;
+  margin-right: 20px;
+}
+
+.F_profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.F_username {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.F_edit-btn, .F_save-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #F2620F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.F_edit-btn:hover{
+  background-color: #D94C00;
+
+}
+.F_name-input {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.F_no-content {
+  margin-top: 30px;
+  color: black;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  font-size: 25px;
+}
+
+.F_introduce-section {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.F_textarea-container {
+  position: relative; /* 버튼을 textarea 내부에 겹치게 하기 위해 상대적 위치 지정 */
+  width: 100%;
+}
+
+.F_introduce-form {
+  display: flex;
+  flex-direction: column; /* flex-direction을 column으로 설정하여 세로로 정렬 */
+  align-items: stretch; /* 버튼이 textarea와 같은 너비를 갖도록 설정 */
+}
+
+.F_introduce-input {
+  width: 100%;
+  height: 30%; /* 텍스트 영역의 높이 설정 */
+  padding: 10px;
+  padding-right: 90px; /* 버튼의 너비만큼 padding 추가 */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  resize: none; /* 크기 조절 불가능하게 설정 */
+}
+
+.F_save-introduce-btn {
+  position: absolute; /* 버튼을 절대 위치로 설정하여 텍스트 영역 내에 배치 */
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%); /* 버튼을 텍스트 영역의 중앙에 배치 */
+  padding: 10px 10px;
+  background-color: #F2620F; /* 버튼 색상 설정 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center; /* 텍스트 가운데 정렬 */
+  line-height: 20px; /* 텍스트가 버튼 안에서 수직으로도 중앙에 위치하게 설정 */
+}
+
+.F_save-introduce-btn:hover {
+  background-color: #D94C00;
+}

@@ -1,0 +1,330 @@
+.F_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: visible;
+}
+
+.F_content {
+  flex: 1.5; /* 비율을 높여서 왼쪽 콘텐츠 영역 확장 */
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.F_content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+.F_category-tabs-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  
+}
+
+.F_category-tabs {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #CCC;
+  height: 100%;
+}
+
+.F_category-tabs ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.F_category-tabs li {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: black;
+}
+
+.F_category-tabs li:hover {
+  color: black;
+  font-weight: bold;
+  /* border-bottom: 2px solid #d94c00; */
+}
+
+
+.F_tab-link {
+  text-decoration: none;
+  color: black;
+}
+
+
+.F_category-tabs-container2 {
+  display: flex;
+  justify-content: left;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.F_category-tabs2 ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.F_category-tabs2 li {
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 13px;
+  color: white;
+  background-color: #F2620F;
+  border-radius: 25px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: left;
+  
+}
+
+.F_category-tabs2 li:hover {
+  color: white;
+  font-weight: bold;
+  background-color: #D94C00;
+}
+
+.F_tab-link2 {
+  text-decoration: none;
+  color: inherit;
+}
+
+.F_payment {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  height: 100vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;           /* 리워드 선택해서 크기 커져도 가로 스크롤 안뜨게 (깔끔) */
+}
+
+.F_reward-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-right: -10px;
+  padding-right: 10px;
+  max-height: 60vh;
+  text-align: left;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.F_reward-list h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.F_selectfunding {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* .selectfunding:hover{
+  background-color: #FFB85A;
+} */
+
+.F_selectfunding li {
+  padding: 15px; /* 패딩 크기를 조금 줄임 */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.F_selectfunding li:hover, .F_selectfunding li.selected {
+  background-color: #f7f9fb;
+}
+.F_selectfunding li:hover{
+  background-color: #FFB85A;
+}
+
+.F_selected-products {
+  margin-top: 10px;
+  overflow-y: auto;
+  max-height: 80vh;
+  width: 100%;
+  padding: 4px;
+}
+
+
+.F_selected-product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  line-height: 1.5;
+  overflow-y: auto;
+  border-radius: 8px;
+  background-color: #ffe1b9;
+  text-align: left;
+}
+
+
+.F_funding-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #F2620F;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  transition: background-color 0.3s;
+  font-family: 'NanumSquareNeo', sans-serif; /* 폰트 적용 */
+}
+
+.F_funding-button:hover {
+  background-color: #FFB85A;
+}
+
+.F_reward-info {
+  padding: 5px;
+}
+
+/* .reward-info:hover {
+  background-color: #FFB85A;
+} */
+
+.F_reward-info h3 {
+  font-size: 16px; /* 텍스트 크기를 약간 줄임 */
+  margin-bottom: 8px;
+}
+
+.F_reward-info p {
+  margin: 4px 0;
+  font-size: 14px; /* 텍스트 크기를 줄임 */
+}
+
+.F_additional-info {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.F_interaction-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.F_like-button, .F_share-button {
+  display: flex;
+  align-items: center;
+  background-color: #f7f9fb;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'NanumSquareNeo', sans-serif; /* 폰트 적용 */
+  font-size: 14px;
+}
+
+.F_like-button img, .F_share-button img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.F_like-button:hover, .F_share-button:hover {
+  background-color: #b1aaaa;
+}
+
+.F_like-button {
+  color: #e91e63;
+}
+
+.F_share-button {
+  color: #007bff;
+}
+.F_action-buttons {
+  display: flex;
+  align-items: center; /* 세로 정렬 중앙 맞춤 */
+  justify-content: space-between; /* 버튼 사이 공간 확보 */
+  gap: 10px; /* 버튼 사이 간격 */
+  position: sticky;
+  margin-top: 10px;     /* 펀딩하기 버튼- 리워드 선택 시 너무 붙는거 방지 */
+}
+
+.F_funding-button {
+  flex: 1; /* 펀딩 버튼이 남은 공간을 차지하도록 함 */
+}
+
+.F_interaction-buttons {
+  display: flex;
+  gap: 10px; /* 하트와 공유 버튼 사이 간격 */
+}
+
+/* SalesPage.css */
+
+/* 기타 스타일 */
+
+.F_share-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 280px;
+  height: 300px;
+}
+
+.F_share-popup button {
+  display: block;
+  margin: 30px 0;
+  font-size: 18px;
+  border: none;
+}
+
+.F_share-popup button:last-child {
+  background-color: #F2620F;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 3px;
+  width: 60px;
+  margin-top: 60px;
+  margin-left: 90px;
+  cursor: pointer;
+}
+
+.F_share-popup button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+
+.F_link img, .F_kakao img, .F_email img{
+  width: 20px;
+  margin-right: 8px;
+
+
+}

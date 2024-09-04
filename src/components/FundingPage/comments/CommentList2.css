@@ -1,0 +1,167 @@
+/* src/components/comments/CommentList.css */
+
+/* @font-face 규칙으로 NanumSquareNeo 글꼴을 정의합니다. */
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-aLt.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-bRg.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-cBd.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-dEb.ttf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-eHv.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoVariable';
+    src: url('/src/fonts/NanumSquareNeo-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+}
+
+/* 댓글 리스트에 적용할 기본 스타일 */
+.comment-list-container {
+    /* margin: 16px;
+    padding: 16px; */
+    font-family: 'NanumSquareNeo', sans-serif; /* 댓글 리스트에 NanumSquareNeo 글꼴 적용 */
+    width: 100%;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.comment-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.comment-avatar {
+    margin-right: 10px;
+}
+
+.comment-content {
+    flex: 1;
+    margin-left: 16px;
+}
+
+.comment-text {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.comment-meta {
+    font-size: 12px;
+    color: #888;
+}
+
+.comment-actions button {
+    background: none;
+    border: none;
+    color: #F2620F;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.comment-actions button:hover {
+    text-decoration: underline;
+}
+
+
+/* 창작자 업데이트 박스 스타일 */
+.creator-update-box {
+    margin-bottom: 20px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    font-family: 'NanumSquareNeo', sans-serif;
+    box-shadow: none;
+    border: none;
+    width: 100%;  /* 박스 크기를 100%로 설정 */
+}
+
+.creator-update-box h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 기본 텍스트 필드 스타일 */
+.creator-update-box .update-textfield {
+    margin-bottom: 10px;
+    color: black; /* 기본적으로 검정색 글씨 */
+}
+
+.creator-update-box .edit-button {
+    background-color: #F2620F;
+    color: white;
+}
+
+.creator-update-box .edit-button:hover {
+    background-color: #F2620F;
+}
+
+.creator-update-container {
+    display: flex;
+    align-items: center; /* 수직 정렬 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    margin-bottom: 8px; /* 아래 간격 */
+}
+
+.creator-update-container h4 {
+    margin-right: auto; /* 제목을 왼쪽으로 밀어냄 */
+    margin-bottom: 0; /* 제목 아래 간격 제거 */
+}
+
+.creator-update-container .date {
+    margin-left: 16px; /* 날짜와 제목 사이에 간격 추가 */
+    margin-right: 10px; /* 날짜를 작성하기 버튼 쪽으로 밀어냄 */
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.update-textfield .MuiOutlinedInput-root {
+    width: 100%; /* 너비 조정 */
+    padding: 10px; /* 내부 패딩 조정 */
+    font-size: 15px; /* 폰트 크기 조정 */
+    font-family: 'NanumSquareNeo', sans-serif !important ;
+    color: black; /* 텍스트가 항상 검정색이 되도록 설정 */
+  }
+  
+  .update-textfield .MuiInputBase-input {
+    font-size: 14px; /* 입력 텍스트의 폰트 크기 조정 */
+  }
+  .comment-username {
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: 800;
+    color: #F2620F;
+}
+
+.comment-date {
+    display: inline-block;
+}

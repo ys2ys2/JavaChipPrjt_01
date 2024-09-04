@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-aLt.ttf') format('truetype'); /* 경로 수정 */
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-bRg.ttf') format('truetype');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-cBd.ttf') format('truetype');
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-dEb.ttf') format('truetype');
+    font-weight: 800;
+  }
+  
+  @font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-eHv.ttf') format('truetype');
+    font-weight: 900;
+  }
+  
+  @font-face {
+    font-family: 'NanumSquareNeoVariable';
+    src: url('/src/fonts/NanumSquareNeo-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+  }
+
+
+.body {
+    font-family: 'NanumSquareNeo', sans-serif; /* 기본 글꼴을 NanumSquareNeo로 설정 */
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.L_container {
+    background-color: #f8f8f8;
+    border: 1px solid #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+   
+    box-sizing: border-box;
+}
+.L_header img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100px; /* 로고 크기 조정 */
+}
+
+.L_h1 {
+    margin-bottom: 100px;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    font-family: 'NanumSquareNeo', sans-serif; /* 기본 글꼴을 NanumSquareNeo로 설정 */
+
+}
+
+.L_form-group {
+    margin-bottom: 20px;
+    min-width: 5px ;
+    min-height: 5px;
+    
+}
+
+.L_join{
+   width: 380px;
+   height: 500px;
+}
+
+.L_input[type="text"],
+.L_input[type="email"]
+ {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+}
+.L_input[type="checkbox"]{ 
+    width: auto !important; 
+} 
+
+.L_terms{
+    display: flex;
+      font-family: 'NanumSquareNeo', sans-serif; /* 기본 글꼴을 NanumSquareNeo로 설정 */
+
+}
+
+
+.L_input[type="text"]:focus,
+.L_input[type="email"]:focus,
+.L_input[type="password"]:focus {
+    border-color: #d00000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(3, 199, 90, 0.2);
+}
+
+.L_input[type="password"].hidden {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.L_error-message {
+    color: #d00000;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#verifyButton {
+    margin-top: 10px;
+    background-color: #F2620F;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#verifyButton:disabled {
+    background-color: #ec7c3a;
+    cursor: not-allowed;
+}
+
+.L_password-strength {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.L_password-strength.weak {
+    color: red;
+}
+
+.L_password-strength.medium {
+    color: orange;
+}
+
+.L_password-strength.strong {
+    color: green;
+}
+
+.L_password-strength.very-strong {
+    color: darkgreen;
+}
+
+
+.L_submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #F2620F;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.L_submit:disabled {
+    background-color: #ec7c3a;
+    cursor: not-allowed;
+}

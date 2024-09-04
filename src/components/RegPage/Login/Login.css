@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-aLt.ttf') format('truetype'); /* 경로 수정 */
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-bRg.ttf') format('truetype');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-cBd.ttf') format('truetype');
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-dEb.ttf') format('truetype');
+    font-weight: 800;
+  }
+  
+  @font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('/src/fonts/NanumSquareNeo-eHv.ttf') format('truetype');
+    font-weight: 900;
+  }
+  
+  @font-face {
+    font-family: 'NanumSquareNeoVariable';
+    src: url('/src/fonts/NanumSquareNeo-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+  }
+
+/* 폰트 적용 예시 */
+.body {
+    font-family: 'NanumSquareNeo', sans-serif; /* 기본 글꼴을 NanumSquareNeo로 설정 */
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-image: url('background.jpg');  */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+
+.L_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 900px;
+    width: 80%; /* 기본 너비를 퍼센트로     설정하여 화면에 따라 유연하게 변화하도록 합니다 */
+    max-width: 800px; /* 최대 너비를 800px로 설정 */
+    min-width: 600px; /* 최소 너비를 설정하여 너무 좁아지지 않도록 합니다 */
+    background-color: #ffffff; /* 반투명 배경 */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+.L_header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.L_header img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100px; /* 로고 크기 조정 */
+}
+
+.L_login-container p {
+    font-size: 20px;
+    margin-bottom: 60px;
+    color: #666666;
+    font-family: 'NanumSquareNeo', sans-serif; /* 기본 글꼴을 NanumSquareNeo로 설정 */
+
+}
+
+.L_form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.L_input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: 'NanumSquareNeo', sans-serif; /* 기본 글꼴을 NanumSquareNeo로 설정 */
+
+}
+
+.L_button {
+    width: 100%;
+    padding: 10px;
+    background-color: #F2620F;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'NanumSquareNeo', sans-serif; /* 기본 글꼴을 NanumSquareNeo로 설정 */
+
+}
+
+.L_button:hover {
+    background-color: #F2620F;
+}
+
+.L_social-login {
+    margin-top: 30px;
+}
+
+.L_social-login p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666666;
+    font-family: 'NanumSquareNeo', sans-serif; /* 기본 글꼴을 NanumSquareNeo로 설정 */
+}
+
+.L_icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.L_icons a img {
+  width: 180px;
+  height: 40px;
+}
+
+.L_signup p {
+    margin-top: 80px;
+    font-size: 16px;
+    font-family: 'NanumSquareNeo', sans-serif; /* 기본 글꼴을 NanumSquareNeo로 설정 */
+
+    
+}
+
+.L_signup a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.L_signup a:hover {
+    text-decoration: underline;
+}
+
+/* 반응형 디자인 */
+@media (min-width: 768px) {
+    .L_container {
+        width: 60%; /* 화면이 클 때는 60% 너비로 설정 */
+        max-width: 900px; /* 최대 너비를 900px로 설정 */
+    }
+}
+
+@media (min-width: 1024px) {
+    .L_container {
+        width: 50%; /* 더 큰 화면에서는 50% 너비로 설정 */
+        max-width: 1000px; /* 최대 너비를 1000px로 설정 */
+    }
+}

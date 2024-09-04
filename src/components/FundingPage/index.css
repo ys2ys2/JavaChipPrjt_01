@@ -1,0 +1,48 @@
+/* @font-face 규칙으로 NanumSquareNeo 글꼴을 정의합니다. */
+@font-face {
+  font-family: 'NanumSquareNeo';
+  src: url('./fonts/NanumSquareNeo-aLt.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  src: url('./fonts/NanumSquareNeo-bRg.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  src: url('./fonts/NanumSquareNeo-cBd.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  src: url('./fonts/NanumSquareNeo-dEb.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  src: url('./fonts/NanumSquareNeo-eHv.ttf') format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'NanumSquareNeoVariable';
+  src: url('./fonts/NanumSquareNeo-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+}
+
+body {
+  font-family: 'NanumSquareNeo', sans-serif; /* 기본 글꼴을 NanumSquareNeo로 설정 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
