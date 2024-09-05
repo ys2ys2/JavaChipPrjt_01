@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/JavachipPrjt_01/static/css/main.a0991455.css",
-    "main.js": "/JavachipPrjt_01/static/js/main.38e35a02.js",
+    "main.js": "/JavachipPrjt_01/static/js/main.c182bfe2.js",
     "static/js/453.2eddec74.chunk.js": "/JavachipPrjt_01/static/js/453.2eddec74.chunk.js",
     "static/media/CD.jpg": "/JavachipPrjt_01/static/media/CD.0916b4046612f37aad09.jpg",
     "static/media/NanumSquareNeo-Variable.ttf": "/JavachipPrjt_01/static/media/NanumSquareNeo-Variable.7e8297962f234fc4aa4b.ttf",
@@ -86,11 +86,11 @@
     "static/media/slick.woff": "/JavachipPrjt_01/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/JavachipPrjt_01/index.html",
     "main.a0991455.css.map": "/JavachipPrjt_01/static/css/main.a0991455.css.map",
-    "main.38e35a02.js.map": "/JavachipPrjt_01/static/js/main.38e35a02.js.map",
+    "main.c182bfe2.js.map": "/JavachipPrjt_01/static/js/main.c182bfe2.js.map",
     "453.2eddec74.chunk.js.map": "/JavachipPrjt_01/static/js/453.2eddec74.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a0991455.css",
-    "static/js/main.38e35a02.js"
+    "static/js/main.c182bfe2.js"
   ]
 }
